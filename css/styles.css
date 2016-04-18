@@ -23,6 +23,7 @@ header {
     width: 100vw;
     height: 200px;
     background-color: hsl(0, 0%, 20%);
+    margin-top: -500px;
 }
 
 #menu {
@@ -53,10 +54,14 @@ main {
     display: none;
     width: 100vw;
     height: 500px;
+    background-color: hsl(180, 50%, 30%);
+    margin-top: -500px;
 }
 
 footer {
     display: none;
     width: 100vw;
     height: 100px;
+    margin-top: -500px;
+    background-color: hsl(20, 70%, 30%);
 }

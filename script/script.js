@@ -57,6 +57,24 @@ $(document).ready(function() {
                 $("header").css("display", "block");
                 $("main").css("display", "block");
                 $("footer").css("display", "block");
+                
+                setTimeout( function() {
+                    $("header").animate({
+                        marginTop: 0
+                    }, 1000)
+                }, 500 )
+                
+                setTimeout( function() {
+                    $("main").animate({
+                        marginTop: 0
+                    }, 1000)
+                }, 800 )
+                
+                setTimeout( function() {
+                    $("footer").animate({
+                        marginTop: 0
+                    }, 1000)
+                }, 1100 )
             })
             
             
@@ -86,7 +104,7 @@ $(document).ready(function() {
                 }, 200)
             }, 350)
                  
-        }, 7200)
+        }, 9200)
             
         
     }
