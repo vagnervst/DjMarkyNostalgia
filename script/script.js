@@ -49,38 +49,44 @@ $(document).ready(function() {
                 height: "100vh",
                 borderRadius: 0
             }, 150)
+                        
             
             circle.animate({
                 opacity: 0
             }, 4000, function() {
-                $(circle).css("display", "none");
-                $("header").css("display", "block");
-                $("main").css("display", "block");
-                $("footer").css("display", "block");
-                
+                $(circle).css("display", "none");                                                
                 setTimeout( function() {
+                    $("header").css("display", "block");
+                    $("main").css("display", "block");
+                    $("footer").css("display", "block");
                     $("header").animate({
-                        marginTop: 0
+                        marginTop: 0,
+                        opacity: 1
                     }, 1000)
                 }, 500 )
                 
                 setTimeout( function() {
+                    
                     $("main").animate({
-                        marginTop: 0
+                        marginTop: 0,
+                        opacity: 1
                     }, 1000)
                 }, 800 )
                 
                 setTimeout( function() {
+                    
                     $("footer").animate({
-                        marginTop: 0
-                    }, 1000)
-                }, 1100 )
+                        marginTop: 0,
+                        opacity: 1
+                    }, 2000)
+                }, 600 )
             })
             
             
         }, 2900)        
         
-        setTimeout(function(){                        
+        setTimeout(function(){            
+            $(".button").css("opacity", "1");
             
             $("#button1").animate({
                 marginTop: 0

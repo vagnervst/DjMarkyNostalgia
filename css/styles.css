@@ -1,5 +1,6 @@
 body {
     background-color: #1a1a1a;
+    overflow-y: hidden;
 }
 
 #wrapper {
@@ -24,6 +25,7 @@ header {
     height: 200px;
     background-color: hsl(0, 0%, 20%);
     margin-top: -500px;
+    opacity: 0;
 }
 
 #menu {
@@ -48,6 +50,7 @@ header {
     margin-top: -100px;
     -moz-user-select: none;
     cursor: pointer;
+    opacity: 0;
 }
 
 main {
@@ -56,6 +59,7 @@ main {
     height: 500px;
     background-color: hsl(180, 50%, 30%);
     margin-top: -500px;
+    opacity: 0;
 }
 
 footer {
@@ -64,4 +68,5 @@ footer {
     height: 100px;
     margin-top: -500px;
     background-color: hsl(20, 70%, 30%);
+    opacity: 0;
 }
