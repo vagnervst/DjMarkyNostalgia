@@ -43,12 +43,15 @@ $(document).ready(function() {
             }, 150)
         }, 2000)
         
-        setTimeout(function(){
+        setTimeout(function(){ /* End of circle animation */
             circle.animate({
                 width: "100vw",
                 height: "100vh",
                 borderRadius: 0
-            }, 150)
+            }, 150, function() {
+                $("#logo").css("display", "block");
+                $("body").css("background-color", "black");
+            })
                         
             
             circle.animate({

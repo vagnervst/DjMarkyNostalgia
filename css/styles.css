@@ -15,14 +15,21 @@ body {
 #circle {
     width: 0vw;
     height: 0vh;
-    background-color: red;
+    background-color: black;
     border-radius: 100px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    display: none;
 }
 
 header {
     display: none;
     width: 100vw;
-    height: 200px;
+    height: 80px;
     background-color: hsl(0, 0%, 20%);
     margin-top: -500px;
     opacity: 0;
@@ -51,13 +58,23 @@ header {
     -moz-user-select: none;
     cursor: pointer;
     opacity: 0;
+    transition-property: box-shadow, font-size, border-radius, background-color;
+    transition-duration: .2s, .2s, .2s, .6s;
+}
+
+.button:hover {
+    box-shadow: inset 0px 5px 0px white;
+    font-size: 20px;
+    background-color: hsl(180, 70%, 40%);
+    border-radius: 0px 0px 5px 5px;
+    color: hsl(20, 90%, 0%);;
 }
 
 main {
     display: none;
     width: 100vw;
-    height: 500px;
-    background-color: hsl(180, 50%, 30%);
+    height: 620px;
+    background-color: hsl(180, 0%, 50%);
     margin-top: -500px;
     opacity: 0;
 }
@@ -67,6 +84,6 @@ footer {
     width: 100vw;
     height: 100px;
     margin-top: -500px;
-    background-color: hsl(20, 70%, 30%);
+    background-color: hsl(20, 0%, 5%);
     opacity: 0;
 }
